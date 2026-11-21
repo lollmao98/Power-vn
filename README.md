@@ -7,5 +7,6 @@ A game about you working about a project late and your brain talks to you. Which
 Its a game Run on Windows By downloading PowerVN exe and running it HF
 enjoy and wait till Chapter 2
 
+I used Ai to teach me some lines I didnt know how to write 🐱
 
 
