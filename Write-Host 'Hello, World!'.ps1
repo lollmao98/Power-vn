@@ -80,9 +80,11 @@ while ($Scene -ne "Exit") {
             if ($State.Chill -eq 5) {
                 Write-Dialogue -Speaker "Brain" -Text "Hell yeah, just check out this smell. Mhmm... (Energy boosted: Project +10%)" -Color Cyan
                 $State.Project += 10
+                $null = Read-Host "`nPress Enter to continue"
                 $Scene = "humm"
             } elseif ($State.Project -eq 5) {
                 Write-Dialogue -Speaker "Brain" -Text "Yeah sure, good luck staying awake." -Color Cyan
+                $null = Read-Host "`nPress Enter to continue"
                 $Scene = "humm"
             }
             
@@ -97,15 +99,22 @@ while ($Scene -ne "Exit") {
             )
             if ($choice -eq 1) {
                 $State.Chill += 10
-                Write-Dialogue -Speaker "Brain" -Text "Nacho cheese(With the power of the dad joke you knocked out even more work weird...)" -Color Brown
-                $Scene = "Sipping"
+                Write-Dialogue -Speaker "Brain" -Text "Nacho cheese(With the power of the dad joke you knocked out even more work weird...)" -Color Blue
+                $null = Read-Host "`nPress Enter to continue"
+                $Scene = "Pers"
             } elseif ($choice -eq 2) {
                 $State.Project += 5
-                Write-Dialogue -Speaker "Brain" -Text "You felt a headache as if it was punishment)" -Color Brown
-                $Scene = "Sipping"
+                Write-Dialogue -Speaker "Brain" -Text "Man you are no fun(You felt a headache as if it was punishment)" -Color Blue
+                $null = Read-Host "`nPress Enter to continue"
+                $Scene = "Pers"
             }
         }
-        
+    "Pers" {
+            Write-Dialogue -Speaker "progress" -Text " Chill: $($State.Chill) | Project: $($State.Project)%" -Color Green
+
+
+
+    }
         }
 
     }
