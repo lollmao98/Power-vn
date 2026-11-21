@@ -99,18 +99,28 @@ while ($Scene -ne "Exit") {
             )
             if ($choice -eq 1) {
                 $State.Chill += 10
+                $State.Project += 10
                 Write-Dialogue -Speaker "Brain" -Text "Nacho cheese(With the power of the dad joke you knocked out even more work weird...)" -Color Blue
                 $null = Read-Host "`nPress Enter to continue"
-                $Scene = "Pers"
+                $Scene = "e"
             } elseif ($choice -eq 2) {
                 $State.Project += 5
                 Write-Dialogue -Speaker "Brain" -Text "Man you're no fun(You felt a headache as if it was punishment)" -Color Blue
                 $null = Read-Host "`nPress Enter to continue"
-                $Scene = "Pers"
+                $Scene = "e"
             }
         }
-    "Pers" {
+    "e" {
             Write-Dialogue -Speaker "progress" -Text " Chill: $($State.Chill) | Project: $($State.Project)%" -Color Green
+            if ($State.Project -ge 15) {
+                Write-Dialogue -Speaker "System" -Text "TO BE CONTINUED IN Power NV Chapter 2" -Color Blue
+                $null = Read-Host "`nPress Enter to continue"
+                $Scene = "Exit"
+            } elseif ($State.Project -lt 15) {
+                Write-Dialogue -Speaker "Brain" -Text "You are a faliure I am forcing you to sleep try again tommorow" -Color Blue
+                $null = Read-Host "`nPress Enter to continue"
+                $Scene = "Exit"
+            }
 
 
 
