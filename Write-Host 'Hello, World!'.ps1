@@ -49,7 +49,7 @@ while ($Scene -ne "Exit") {
     Clear-Host
     switch ($Scene) {
         "Start" {
-            Write-Dialogue -Speaker "Narrator" -Text "Rain taps against the window. The clock hits 3am." -Color White
+            Write-Dialogue -Speaker "Narrator" -Text "Rain taps against the window. The clock hits 3am." -Color Blue
             $name = Read-Host "`nEnter your name (or press Enter for Adam)"
             if (-not [string]::IsNullOrWhiteSpace($name)) {
                 $State.PlayerName = $name.Trim()
