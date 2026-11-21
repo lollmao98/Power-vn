@@ -104,7 +104,7 @@ while ($Scene -ne "Exit") {
                 $Scene = "Pers"
             } elseif ($choice -eq 2) {
                 $State.Project += 5
-                Write-Dialogue -Speaker "Brain" -Text "Man you are no fun(You felt a headache as if it was punishment)" -Color Blue
+                Write-Dialogue -Speaker "Brain" -Text "Man you're no fun(You felt a headache as if it was punishment)" -Color Blue
                 $null = Read-Host "`nPress Enter to continue"
                 $Scene = "Pers"
             }
