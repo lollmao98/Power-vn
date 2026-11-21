@@ -1,4 +1,3 @@
-# Phase 1: Minimal Playable Visual Novel in PowerShell
 Set-StrictMode -Version Latest
 $Host.UI.RawUI.WindowTitle = "My PowerShell VN - P1"
 
@@ -9,7 +8,6 @@ $State = @{
     Project    = 0
 }
 
-# 2. Typewriter Text Helper
 function Write-Dialogue {
     param(
         [Parameter(Mandatory)]
@@ -30,7 +28,6 @@ function Write-Dialogue {
     Write-Host ""
 }
 
-# 3. Choice Menu Helper
 function Get-Choice {
     param(
         [Parameter(Mandatory)]
@@ -46,7 +43,6 @@ function Get-Choice {
     return [int]$pick
 }
 
-# 4. Scene Loop
 $Scene = "Start"
 
 while ($Scene -ne "Exit") {
