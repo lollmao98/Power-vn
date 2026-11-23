@@ -12,3 +12,4 @@ enjoy and wait till Chapter 2
 I used Ai to teach me some lines as I didnt know how to write them🐱
 It was programmed using vs code
 
+to find the code of the shell you can view or download Write-Host 'Hello, World!'.ps1
