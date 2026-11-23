@@ -4,9 +4,11 @@
 
 A game about you working about a project late and your brain talks to you. Which is What happened to me on random tuesday and I said to myself I have to turn it to a Interactive Story
 
-to play the the game download PowerVN.exe and run it
+Its an interactive story. which you can control by using keyboard inputs
+
+to play the the game download PowerVN.exe and run it or download it from https://lollmao98.itch.io/3am-thought
 enjoy and wait till Chapter 2
 
-I used Ai to teach me some lines I didnt know how to write 🐱
-
+I used Ai to teach me some lines as I didnt know how to write them🐱
+It was programmed using vs code
 
