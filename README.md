@@ -4,7 +4,7 @@
 
 A game about you working about a project late and your brain talks to you. Which is What happened to me on random tuesday and I said to myself I have to turn it to a Interactive Story
 
-Its a game Run on Windows By downloading PowerVN exe and running it HF
+to play the the game download PowerVN.exe and run it
 enjoy and wait till Chapter 2
 
 I used Ai to teach me some lines I didnt know how to write 🐱
